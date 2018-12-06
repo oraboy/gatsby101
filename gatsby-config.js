@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'Gatsby NanoAffiliate1',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -24,6 +24,15 @@ module.exports = {
         display: 'minimal-ui',
         icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
       },
+    },
+    {
+      resolve: `gatsby-source-mongodb`,
+      options: { 
+        dbName: `nano-affil`, 
+        collection: `giftIdeas`,
+        server: { address: "ds225294.mlab.com", port: 25294 },
+        auth: { user: "ssg-agent", password: "silvermist12"} 
+       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
