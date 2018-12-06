@@ -7,7 +7,7 @@ export default ({ data }) => {
   console.log(data)
   return (
     <Layout>
-      <div>Hello world -- {data.site.siteMetadata.title}</div>
+      <div>Hello wo rld -- {data.site.siteMetadata.title}</div>
         <table>
         <tbody>
             {data.allMongodbNanoaffilGiftIdeas.edges.map(({ node }, index) => (
